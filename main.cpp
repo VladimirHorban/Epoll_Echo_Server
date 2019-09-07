@@ -35,7 +35,7 @@ void* service( void* aClientSocket )
 
     printf( "%s \n", "Stop service" );
 
-    delete buffer;
+    delete []buffer;
     close( client );
     pthread_exit( 0 );
 }
